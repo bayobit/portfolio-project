@@ -25,7 +25,7 @@ SECRET_KEY = 'i_j1%!g^ly5ci78ohz=eolrux4+_z50a9!s0(=l6wemxvz($x)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.bitekhub.com']
 
 
 # Application definition
@@ -135,7 +135,6 @@ MEDIA_URL = '/media/' #location for images
 
 
 try:
-    from local_settings import *
+  from .local_settings import *
 except ImportError:
-    pass
-    
+  pass
